@@ -1,0 +1,91 @@
+*{	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Pridi', serif;
+}
+
+.mirror-shadow{
+	-webkit-box-reflect:below 0px linear-gradient(transparent,#0003);
+}
+
+.font{
+	font-family: 'Tourney', cursive;
+	font-size: 70px;
+	height: 70px;
+}
+.font-sm{
+	font-family: 'Tourney', cursive;
+	height: 42px;
+}
+
+.visible{
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	pointer-events: none;
+}
+
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+i{
+	cursor: pointer;
+}
+
+.col-25{
+	width: 24% !important;
+}
+
+.col-own-5{
+	width: 6% !important;
+}
+.col-10{
+	width: 11% !important;
+}
+
+.start,.stop,.reset,.split{
+	background: transparent;
+	color: #dc3545;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+	transition: 0.2s;
+	box-shadow: 0px 0px 15px #dc3545;
+}
+
+
+.rotate{
+	font-size:30px;
+	color: white;
+}
+
+.start:active,.stop:active,.reset:active,.split:active{
+	transform: scale(0.9);
+	transition: 0.2s;
+}
+
+h1{
+	margin-bottom: 0px !important;
+}
+
+.over{
+	overflow-y: scroll;
+	height: 200px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.over::-webkit-scrollbar{
+	background-color: transparent;
+	width: 5px;
+}
+
+.over::-webkit-scrollbar-thumb{
+	background:linear-gradient(#dc3545,#dc3545);
+	border-radius: 5px;
+}
